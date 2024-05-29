@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element:<Navigate to="/cloud"/>
+    element:<Navigate to="/cloud" replace/>
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
