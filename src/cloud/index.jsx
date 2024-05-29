@@ -11,13 +11,6 @@ async function init() {
   };
   gui.add(settings, 'speed', 0.005, 0.3);
   gui.add(settings, 'cloudScale', 1, 5);
-
-  const script = document.createElement('script');
-  await new Promise(resolve => {
-    script.onload = resolve;
-    script.src = '/webgl-utils.js'
-    document.head.appendChild(script);
-  })
   let stats = new Stats();
 
   stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
