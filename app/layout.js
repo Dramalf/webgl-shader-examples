@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
         <title>shader examples</title>
-        <script src="/webgl-utils.js"></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
